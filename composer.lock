@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "c1f104d9724f03b0e9f09c7e753c59a8",
+    "packages": [
+        {
+            "name": "malavehaxiel/jscript",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/malavehaxiel/jscript.git",
+                "reference": "02f177bac1afe6f8aeaae26da1b13465066bdcb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/malavehaxiel/jscript/zipball/02f177bac1afe6f8aeaae26da1b13465066bdcb3",
+                "reference": "02f177bac1afe6f8aeaae26da1b13465066bdcb3",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MalaveHaxiel\\JScript\\JScriptServiceProvider"
+                    ],
+                    "aliases": {
+                        "Jscript": "MalaveHaxiel\\JScript\\Facades\\Jscript"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MalaveHaxiel\\JScript\\": "/src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Haxiel Malave",
+                    "email": "malavehaxiel96@gmail.com"
+                }
+            ],
+            "description": "Component that improves the handling of some bootstrap scripts",
+            "time": "2020-02-03T14:29:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
