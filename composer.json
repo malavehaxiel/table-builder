@@ -1,0 +1,18 @@
+{
+    "name": "malavehaxiel/table-builder",
+    "description": "component for easy creation of tables with configuration of bootstrap datatables\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[A\u001b[B\u001b[C\u001b[C\u001b[C",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Haxiel Malave",
+            "email": "malavehaxiel96@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+		"psr-4": {
+			"MalaveHaxiel\\TableBuilder\\": "/src"
+		}
+    }
+}
