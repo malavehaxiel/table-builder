@@ -2,11 +2,18 @@
 
 namespace MalaveHaxiel\TableBuilder;
 
-use Jscript;
+use MalaveHaxiel\JScript\ScriptBuilder;
 
 class TableBuilder {
 
 	use BasicComponent;
+
+	protected $scriptBuilder;
+
+	public function __construct(ScriptBuilder $scriptBuilder)
+	{
+		$this->scriptBuilder = $scriptBuilder;
+	}
 
 	public function header(array $columsHeader = array())
 	{
@@ -38,8 +45,8 @@ class TableBuilder {
 	{
 		$dataTable = $this->table($id, $columsHeader, $optionsTable);
 		
-		$dataTable .= Jscript::script('$(document).ready(function(){'.
-			Jscript::dataTable('#'.$id)->getString().'});'
+		$dataTable .= $this->scriptBuilder->script('$(document).ready(function(){'.
+			$this->scriptBuilder->dataTable('#'.$id)->getString().'});'
 		)->get();
 		
 		return $dataTable;

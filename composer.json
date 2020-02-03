@@ -9,10 +9,22 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "malavehaxiel/jscript": "^1.0"
+    },
     "autoload": {
 		"psr-4": {
 			"MalaveHaxiel\\TableBuilder\\": "/src"
 		}
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MalaveHaxiel\\TableBuilder\\TableBuilderServiceProvider"
+            ],
+            "aliases": {
+                "Table": "MalaveHaxiel\\TableBuilder\\Facades\\Table"
+            }
+        }
     }
 }
